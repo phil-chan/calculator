@@ -12,6 +12,8 @@ var isPreviousResult = false; //maybe when user clicks same operation button
 
 var display = document.getElementById('display');
 
+listen();
+
 // function start program listen()
 // has event listner to get pressed button value
 function listen() {
@@ -99,3 +101,21 @@ function storeNumber(buttonVal) {
 // Does calculations
 // displays number
 // empties numArray at the end
+function calculate() {
+    numArray.push(numString);
+    let currentNum = Number(numArray[0]);
+    for (let i = 0; i < numArray.length; i++) {
+        let nextNum = Number(numArray[1]);
+        let operation = numArray[i];
+        if (operation === "+") currentNum += nextNum;
+        else if (operation === "-") currentNum -= nextNum;
+        else if (operation === "*") currentNum *= nextNum;
+        else if (operation === "/") currentNum /= nextNum;
+    }
+    if (currentNum < 0) currentNum = Math.abs(currentNum) + '-';
+
+    display.value = currentNum;
+    numString = JSON.stringify(currentNum);
+    isPreviousResult = true;
+    numArray = [];
+}
