@@ -1,0 +1,30 @@
+#container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#title {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#tagline {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#display {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(200, 200, 200);
+}
+
+.row {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+button{
+    width: 50px;
+}
