@@ -105,7 +105,7 @@ function calculate() {
     numArray.push(numString);
     let currentNum = Number(numArray[0]);
     for (let i = 0; i < numArray.length; i++) {
-        let nextNum = Number(numArray[1]);
+        let nextNum = Number(numArray[i + 1]);
         let operation = numArray[i];
         if (operation === "+") currentNum += nextNum;
         else if (operation === "-") currentNum -= nextNum;
