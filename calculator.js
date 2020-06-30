@@ -112,7 +112,7 @@ function calculate() {
         else if (operation === "*") currentNum *= nextNum;
         else if (operation === "/") currentNum /= nextNum;
     }
-    if (currentNum < 0) currentNum = Math.abs(currentNum) + '-';
+    if (currentNum < 0) currentNum = '-' + Math.abs(currentNum);
 
     display.value = currentNum;
     numString = JSON.stringify(currentNum);
