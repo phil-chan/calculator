@@ -1,15 +1,69 @@
-<!--  
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--  
     a calculator container
    
     author name
     calculator name
 
-    row 1 AC CE % /
-    row 2 7 8 9 X
-    row 3 4 5 6 -
-    row 4 1 2 3 +
-    row 5 0 . = +
+    row 1 ======AC CE % /
+    row 2 ======7 8 9 X
+    row 3 ======4 5 6 -
+    row 4 ======1 2 3 +
+    row 5 ======0 . = +
 
     layout ideas ==>
         try flexbox
 -->
+
+    <div id='container'>
+
+        <h1 id='title'>Calculator</h1>
+        <input id='display' value='0'></input>
+        <div class='row'>
+            <button id="allclear" value="AC" onclick="allClear()">AC</button>
+            <button id="clearentry" value="CE" onclick="clearEntry()">CE</button>
+            <button id="percent" value="%">%</button>
+            <button id="divide" value="/">/</button>
+        </div>
+        <div class='row'>
+            <button id="seven" value="7">7</button>
+            <button id="eight" value="8">8</button>
+            <button id="nine" value="9">9</button>
+            <button id="multiply" value="*">*</button>
+        </div>
+        <div class='row'>
+            <button id="four" value="4">4</button>
+            <button id="five" value="5">5</button>
+            <button id="six" value="6">6</button>
+            <button id="minus" value="-">-</button>
+        </div>
+        <div class='row'>
+            <button id="one" value="1">1</button>
+            <button id="two" value="2">2</button>
+            <button id="three" value="3">3</button>
+            <button id="plus" value="+">+</button>
+        </div>
+        <div class='row'>
+            <button id="zero" value="0">0</button>
+            <button id="point" value=".">.</button>
+            <button id="equal" value="=">=</button>
+        </div>
+
+    </div>
+
+    <script src="calculator.js" async defer></script>
+</body>
+
+</html>

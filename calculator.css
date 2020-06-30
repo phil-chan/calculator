@@ -1,0 +1,50 @@
+button,
+input,
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#container {
+    width: 300px;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: tan;
+}
+
+#title {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border: 0px;
+}
+
+input {
+    background-color: rgb(200, 200, 200);
+    text-align: right;
+    font-size: 35px;
+    width: 90%;
+    border: 0px;
+    padding: 15px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.row {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid rgb(200, 200, 200);
+    outline: none;
+    background-color: rgb(235, 235, 235);
+    font-size: 18px;
+}
+
+button:hover {
+    opacity: .66;
+}
